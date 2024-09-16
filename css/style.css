@@ -3,7 +3,16 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, mark, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, mark, blockquote, pre, 
+a, abbr, acronym, address, big, cite, code, del, 
+dfn, em, img, ins, kbd, q, s, samp, small, strike, 
+strong, sub, sup, tt, var, b, u, i, center, dl, dt, 
+dd, ol, ul, li, fieldset, form, label, legend, table, 
+caption, tbody, tfoot, thead, tr, th, td, article, 
+aside, canvas, details, embed, figure, figcaption, 
+footer, header, hgroup, menu, nav, output, ruby, 
+section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -13,7 +22,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, mark, 
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
@@ -21,13 +31,11 @@ body {
     line-height: 1;
 }
 
-ol,
-ul {
+ol, ul {
     list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
     quotes: none;
 }
 
@@ -41,30 +49,30 @@ table {
     border-spacing: 0;
 }
 
+
+/* my css - - - - - - - - - - - - - - - - - - - - - */
 html {
     background-image: url("../img/bpb_bg.jpg");
     background-color: #202020;
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(30px);
-    font-family: "Titillium Web", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    color: aliceblue;
+    color: rgb(170, 176, 181);
+    font-size: 1.5em;
 }
 
 body {
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(7px);
 }
 
-header, footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
+header {
+    padding: 15px;
+    background-color: #141414;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer {
 }
 
 .centerColumn {
@@ -72,50 +80,55 @@ header, footer {
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
-    /* background-color: #181818; */
-    background-color: #14141480;
-    backdrop-filter: blur(30px);
+    background-color: #06060649;
+    backdrop-filter: blur(15px);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.content {
-    width: 100%;
-    word-wrap: break-word;
+.banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imgname {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 h1 {
-    font-weight: 500;
     font-style: normal;
-    font-size: 400%;
-    padding-left: 15px;
-    padding-right: 7px;
+    font-size: 2.5em;
+    color: aliceblue;
+}
+
+h2 {
+    font-style: normal;
+    font-size: 1.5em;
+    color: aliceblue;
 }
 
 .aboutme {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;    
     font-size: 1.2em;
-    padding-top: 15px;
+    text-align: center;
 }
 
 .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
     font-size: 1.2em;
-    padding: 20px;
 }
 
 p {
-    padding: 5px;
-    font-weight: 300;
     color: rgb(165, 171, 177);
 }
 
 a {
-    padding-right: 5px;
-    padding-left: 5px;
     text-decoration: none;
-    font-weight: 300;
+    padding: 5px;
 }
 
 a:link, a:visited {
@@ -126,24 +139,14 @@ a:hover, a:active {
     color: aliceblue;
 }
 
-.logosize {
-    max-width: 100%;
-    height: auto;
-    width: 15%;
-    padding: 0;
-    transition: transform .6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
-}
-
-.logopos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
+.logosize { 
+    transform: rotate(0deg);
+    transition: transform 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) ;
 }
 
 .logosize:hover {
-    transform: rotate(125deg);
-    transition: transform .6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    transform: rotate(395deg);
+    transition: transform 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 
 .videoembed {
