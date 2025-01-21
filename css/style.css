@@ -52,12 +52,12 @@ table {
 
 /* my css - - - - - - - - - - - - - - - - - - - - - */
 html {
-    background-image: url("../img/bpb_bg.jpg");
-    background-color: #202020;
+    background-image: url("../img/BBA5-1.jpg");
+    background-color: #333333;
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(30px);
-    color: rgb(170, 176, 181);
+    color: rgb(255, 255, 255);
     font-size: 1em;
 }
 
@@ -66,9 +66,9 @@ body {
     height: 100%;
 }
 
-header {
+header, footer {
     padding: 15px;
-    background-color: #141414;
+    background-color:   #071016;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -77,9 +77,8 @@ header {
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #06060649;
+    background-color: #08071677;
     backdrop-filter: blur(15px);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.979);
 }
 
 .banner {
@@ -99,6 +98,7 @@ h1 {
     font-style: normal;
     font-size: 3em;
     color: aliceblue;
+    padding-left: 5px;
 }
 
 h2 {
@@ -119,31 +119,9 @@ h2 {
     font-size: 1.2em;
 }
 
-p {
-    color: rgb(165, 171, 177);
-}
-
 a {
     text-decoration: none;
     padding: 5px;
-}
-
-a:link, a:visited {
-    color: #2dc868;
-}
-
-a:hover, a:active {
-    color: aliceblue;
-}
-
-.logosize { 
-    transform: rotate(0deg);
-    transition: transform 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) ;
-}
-
-.logosize:hover {
-    transform: rotate(395deg);
-    transition: transform 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 
 .videoembed {
